@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="css/main_ltr.css"> -->
+    <title>Doctor</title>
+</head>
+
+<body>
+    <div class="loader_wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <div class="auth_wrapper">
+        <img src="images/login_bg.png" class="auth_bg" alt="login bg">
+        <div class="container-fluid">
+            <form action="">
+                <div class="row">
+                    <div class="col-lg-6 d-md-block d-none">
+                        <div class="row">
+                            <div class="col-12 mb-3">
+                                <img src="images/doctor-img.png" class="w-100 main_login_img" alt="">
+                            </div>
+                            <div class="col-md-6 col-12 mb-2">
+                                <img class="w-100 login_img" src="images/group1.png" alt="">
+                            </div>
+                            <div class="col-md-6 col-12 mb-2">
+                                <img class="w-100 login_img" src="images/doctor-img2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-8 col-12">
+                        <div class="d-flex flex-column align-items-center position-relative">
+                            <a class="default_link float_top_left M_top_50 mainColor font30" href="index.html">
+                                <ion-icon name="arrow-back-outline"></ion-icon>
+                            </a>
+                            <img src="images/auth_logo.png" class="width120 M_bottom_50 M_top_40" alt="">
+                            <h4 class="mainColor fontBold mt4 M_bottom_40">Sign up</h4>
+                        </div>
+                        <div class="row flex-column align-items-center">
+                            <div class="col-lg-6 col-md-8 col-12 mt-2 mb-2">
+                                <div class="form__label">
+                                    <input class="default_input" type="text" required="" placeholder="Full name">
+                                    <label class="float__label" for="">Full name</label>
+                                    <span class="float_icon"><img src="images/user.png" class="width18" alt="user"></span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-8 col-12 mt-2 mb-2">
+                                <div class="form__label">
+                                    <input class="default_input" type="number" required="" placeholder="Mobile number">
+                                    <label class="float__label" style="left: 12%;" for="">Mobile number</label>
+                                    <span class="float_icon"><img src="images/call-calling.png" class="width18" alt="user"></span>
+                                    <select name="" id="">
+                                        <option value="">+20</option>
+                                        <option value="">+996</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-8 col-12 mt-2 mb-2">
+                                <div class="form__label">
+                                    <input class="default_input" type="text" required="" placeholder="Email">
+                                    <label class="float__label" for="">Email</label>
+                                    <span class="float_icon"><img src="images/email.png" class="width18" alt="email"></span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-8 col-12 mt-2 mb-2">
+                                <div class="form__label">
+                                    <input class="default_input" id="input_pass" type="password" required=""
+                                        placeholder="password">
+                                    <label class="float__label" for="">password</label>
+                                    <div class="toggle_pass">
+                                        <input type="checkbox" class="float_input" onclick="showPassword()">
+                                        <span class="font17">
+                                            <ion-icon name="eye-off-outline" role="img" class="md hydrated"
+                                                aria-label="eye off outline"></ion-icon>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-8 col-12 mt-2 mb-2">
+                                <label class="checkbox mb-0">
+                                    <div class="position-relative M_end_10">
+                                        <input type="checkbox" class="float_input">
+                                        <span class="custom_check"><i class="fas fa-check"></i></span>
+                                    </div>
+                                    <h6 class="font12 mb-0"> Accept <a class="default_link fontBold" data-target="#terms" data-toggle="modal" href="">Terms and Conditions</a> </h6>
+                                </label>
+                            </div>
+                            <div class="col-lg-6 col-md-8 col-12 mt-3 mb-5">
+                                <button class="btn main_btn up raise w-100">Sign up</button>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-flex justify-content-center">
+                                    <a class="default_link font17" href="login.html">Login</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal -->
+<div class="modal fade" id="terms" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Terms and Conditions</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">  new WOW().init(); </script>
+    <script>
+
+        function showPassword() {
+            var inptPass = document.getElementById('input_pass')
+            console.log(inptPass)
+            if (inptPass.type === "password") {
+                inptPass.type = "text";
+            } else {
+                inptPass.type = "password";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

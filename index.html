@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel=stylesheet href="css/owl.carousel.min.css">
+    <link rel=stylesheet href="css/nice-select.css">
+    <link rel=stylesheet href="css/owl.theme.default.min.css">
+    <link rel=stylesheet href="Ckin/css/ckin.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="css/main_ltr.css"> -->
+    <title>Doctor</title>
+</head>
+
+<body>
+    <div class="loader_wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <!-- start header -->
+    <header class="p-1 m-1">
+        <div class="container-fluid position-relative">
+            <div class="header">
+                <div class="header-wrapper">
+                    <div id="nav_layer" onclick="toggleSide()"></div>
+                    <div class="logo">
+                        <a class="default_link" href="index.html">
+                            <img src="images/logo.png" alt="Home">
+                        </a>
+                    </div>
+                    <div id="navBar" class="navBar">
+                        <ul>
+                            <li class="active"><a class="default_link" href="index.html">Home</a></li>
+                            <li><a class="default_link" href="#Services">Services</a></li>
+                            <li><a class="default_link" href="#About">About us</a></li>
+                            <li><a class="default_link" href="#Doctors">Doctors</a></li>
+                            <li><a class="default_link" href="#Blog">Blog Post</a></li>
+                            <li><a class="default_link" href="#Testimonials">Testimonials</a></li>
+                            <li><a class="default_link" href="#Contact">Contact us</a></li>
+                            <li><a class="default_link" href="job.html">job</a></li>
+                        </ul>
+                    </div>
+                    <div class="auth">
+                        <a href="login.html" class="btn main_btn up fluid fontBold">Login</a>
+                        <a href="register.html" class="default_link text-white">Sign up</a>
+                    </div>
+                    <div id="toggle_side" class="toggle_side" onclick="toggleSide()">
+                        <ion-icon name="stats-chart-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="cursol-wrapper" class="cursol-wrapper">
+            <div id="main_slider" class="owl-carousel owl-theme owlCarousel">
+                <div class="item">
+                    <video controls data-color="var(--main)" class="Videopaner">
+                        <source src="images/Snapinsta_305854199_2848676512095187_5511389662182562894_n.mp4" type="video/mp4">
+                    </video>
+                    <div class="overLay">
+                        <div class="slidContent container">
+                            <div class="d-flex flex-column align-items-center">
+                                <span class="text-white fontBold font25 mb-2">We create gorgeous smiles and provide a</span>
+                                <span class="text-white fontBold font25 mb-4">full range of dental services!</span>
+                                <span class="text-white font15 mb-3">We use the most modern equipment and</span>
+                                <span class="text-white font15 mb-3">advanced technologies for effective treatment</span>
+                                <img class="width100" src="images/smile.png" alt="smile">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <video controls data-color="var(--main)" class="Videopaner">
+                        <source src="images/ShortVideo.mkv" type="video/mp4">
+                    </video>
+                    <div class="overLay">
+                        <div class="slidContent container">
+                            <div class="d-flex flex-column align-items-center">
+                                <span class="text-white fontBold font25 mb-2">We create gorgeous smiles and provide a</span>
+                                <span class="text-white fontBold font25 mb-4">full range of dental services!</span>
+                                <span class="text-white font15 mb-3">We use the most modern equipment and</span>
+                                <span class="text-white font15 mb-3">advanced technologies for effective treatment</span>
+                                <img class="width100" src="images/smile.png" alt="smile">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="appointment">
+                <form action="">
+                    <div class="inputs_row">
+                        <div class="input_item">
+                            <div class="input_select M_bottom_40">
+                                <select class="niceSelect">
+                                    <option selected disabled value="">Services</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="input_item">
+                            <div class="input_select M_bottom_40">
+                                <select class="niceSelect">
+                                    <option selected disabled value="">Doctors</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="input_item">
+                            <div class="input_select M_bottom_40">
+                                <select class="niceSelect">
+                                    <option selected disabled value="">MM/DD/YYYY</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn main_btn up fluid fontBold height55 ml-1 mr-1">Appointment</button>
+                    </div>
+                </form>
+            </div>
+            <div class="pagination_slider">
+                <button class="btn p-0 slider-arrow right"> <img class='width20' src="images/up-arrow.png"> </button>
+                <div id="customized-dots"></div>
+                <button class="btn p-0 slider-arrow left"> <img class='width20' src="images/down-arrow.png"> </button>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+
+    <!-- start content -->
+    <div class="content mb-0">
+
+        <!-- start services -->
+        <section id="Services" class="services mb-5">
+            <div class="container">
+                <h5 class="text-center fontBold mainColor mb-4">services</h5>
+                <div class="title-txt">
+                    <p class="mb-2">
+                        We offer the widest range of services in all areas of dentistry.
+                    </p>
+                    <p class="mb-2">
+                        From professional teeth cleaning to complex treatment
+                    </p>
+                </div>
+                <div class="row M_top_50">
+                    <div class="col-lg-4 col-md-6 col-12 mb-5">
+                        <div class="d-flex">
+                            <div class="service-icon">
+                                <img class="w-50" src="images/service_img1.png" alt="">
+                            </div>
+                            <div class="d-flex flex-column">
+                                <h6 class="fontBold font14">tooth implant</h6>
+                                <p class="font12 mb-1 secondColorr"> Simple description of service Simple </p>
+                                <p class="font12 mb-1 secondColorr">description of service</p>
+                                <a class="default_link mainColor font13 mt-2" href="service_details.html">
+                                    <div class="d-flex align-items-center">
+                                        <span>Learn more</span>
+                                        <span class="P_top_6 M_start_5">
+                                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-5">
+                        <div class="d-flex">
+                            <div class="service-icon">
+                                <img class="w-50" src="images/service_img2.png" alt="">
+                            </div>
+                            <div class="d-flex flex-column">
+                                <h6 class="fontBold font14">orthodontic</h6>
+                                <p class="font12 mb-1 secondColorr"> Simple description of service Simple </p>
+                                <p class="font12 mb-1 secondColorr">description of service</p>
+                                <a class="default_link mainColor font13 mt-2" href="service_details.html">
+                                    <div class="d-flex align-items-center">
+                                        <span>Learn more</span>
+                                        <span class="P_top_6 M_start_5">
+                                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-5">
+                        <div class="d-flex">
+                            <div class="service-icon">
+                                <img class="w-50" src="images/service_img1.png" alt="">
+                            </div>
+                            <div class="d-flex flex-column">
+                                <h6 class="fontBold font14">tooth implant</h6>
+                                <p class="font12 mb-1 secondColorr"> Simple description of service Simple </p>
+                                <p class="font12 mb-1 secondColorr">description of service</p>
+                                <a class="default_link mainColor font13 mt-2" href="service_details.html">
+                                    <div class="d-flex align-items-center">
+                                        <span>Learn more</span>
+                                        <span class="P_top_6 M_start_5">
+                                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-5">
+                        <div class="d-flex">
+                            <div class="service-icon">
+                                <img class="w-50" src="images/service_img3.png" alt="">
+                            </div>
+                            <div class="d-flex flex-column">
+                                <h6 class="fontBold font14">caries treatment</h6>
+                                <p class="font12 mb-1 secondColorr"> Simple description of service Simple </p>
+                                <p class="font12 mb-1 secondColorr">description of service</p>
+                                <a class="default_link mainColor font13 mt-2" href="service_details.html">
+                                    <div class="d-flex align-items-center">
+                                        <span>Learn more</span>
+                                        <span class="P_top_6 M_start_5">
+                                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-5">
+                        <div class="d-flex">
+                            <div class="service-icon">
+                                <img class="w-50" src="images/service_img4.png" alt="">
+                            </div>
+                            <div class="d-flex flex-column">
+                                <h6 class="fontBold font14">teeth whitening</h6>
+                                <p class="font12 mb-1 secondColorr"> Simple description of service Simple </p>
+                                <p class="font12 mb-1 secondColorr">description of service</p>
+                                <a class="default_link mainColor font13 mt-2" href="service_details.html">
+                                    <div class="d-flex align-items-center">
+                                        <span>Learn more</span>
+                                        <span class="P_top_6 M_start_5">
+                                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-5">
+                        <div class="d-flex">
+                            <div class="service-icon">
+                                <img class="w-50" src="images/service_img1.png" alt="">
+                            </div>
+                            <div class="d-flex flex-column">
+                                <h6 class="fontBold font14">tooth implant</h6>
+                                <p class="font12 mb-1 secondColorr"> Simple description of service Simple </p>
+                                <p class="font12 mb-1 secondColorr">description of service</p>
+                                <a class="default_link mainColor font13 mt-2" href="service_details.html">
+                                    <div class="d-flex align-items-center">
+                                        <span>Learn more</span>
+                                        <span class="P_top_6 M_start_5">
+                                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end services -->
+
+        <!-- start about -->
+        <section id="About" class="about-us mb-5">
+            <img src="images/service-bg.png" class="about_panner" alt="">
+            <img src="images/shape.png" class="shape_send" alt="">
+            <img src="images/virus.png" class="shape_virus" alt="">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-12 mb-3">
+                        <div class="row">
+                            <div class="col-12 mb-3">
+                                <img src="images/doctor-img.png" class="main_img_doctor" alt="">
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mb-2">
+                                <img class="about_img" src="images/group1.png" alt="">
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mb-2">
+                                <img class="about_img" src="images/doctor-img2.png" alt="">
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12 mb-2">
+                                <img class="about_img" src="images/group2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 mb-3">
+                        <h6 class="fontBold mainColor mb-4">About us</h6>
+                        <p class="fontBold font25 secondColor">
+                            We know how to create the perfect smile
+                        </p>
+                        <p class="about-txt">
+                            Our clients do not need to think about which specialist and in what order they should get.
+                            We think for ourselves, accompanying you at every stage of treatment!
+                            We use the most modern equipment and advanced technologies for effective treatment.
+                        </p>
+                        <div class="d-flex align-items-center justify-content-between mt-5">
+                            <div class="d-flex flex-column align-items-center mb-2">
+                                <span class="font35 mainColor mb-3">5</span>
+                                <span class="font12">years in the dental market</span>
+                            </div>
+                            <div class="d-flex flex-column align-items-center mb-2">
+                                <span class="font35 mainColor mb-3">156</span>
+                                <span class="font12">patients per week</span>
+                            </div>
+                            <div class="d-flex flex-column align-items-center mb-2">
+                                <span class="font35 mainColor mb-3">4</span>
+                                <span class="font12">doctors -specialists</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end about -->
+
+        <!-- start specialists -->
+        <section id="Doctors" class="specialists mb-5">
+            <h5 class="text-center fontBold mainColor mb-4">Our specialists</h5>
+            <div class="title-txt">
+                <p class="mb-2">
+                    Our team consists of professional and experienced doctors,
+                </p>
+                <p class="mb-2">
+                    each of whom is a specialist in their field.
+                </p>
+            </div>
+            <div class="container mt-5">
+                <div class="cards_group">
+                    <div class="column_card">
+                        <div class="specialists_img">
+                            <img src="images/specialists_img1.png" class="radius12" alt="">
+                            <a href="doctor.html" class="over-layer"><i class="fa fa-link"></i></a>
+                        </div>
+                        <h6 class="fontBold mt-3 mb-3">Доктор Белал</h6>
+                        <p class="text-center text-secondary font11">
+                            Стоматолог-ортопед, стоматолог-ортодонт,
+                            хирург-имплантолог
+                        </p>
+                        <a class="default_link mainColor font13" href="doctor.html">
+                            <div class="d-flex align-items-center">
+                                <span>Learn more</span>
+                                <span class="P_top_6 M_start_5">
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="column_card">
+                        <div class="specialists_img">
+                            <img src="images/specialists_img2.png" class="radius12" alt="">
+                            <a href="doctor.html" class="over-layer"><i class="fa fa-link"></i></a>
+                        </div>
+                        <h6 class="fontBold mt-3 mb-3">Доктор Белал</h6>
+                        <p class="text-center text-secondary font11">
+                            Стоматолог-ортопед, стоматолог-ортодонт,
+                            хирург-имплантолог
+                        </p>
+                        <a class="default_link mainColor font13" href="doctor.html">
+                            <div class="d-flex align-items-center">
+                                <span>Learn more</span>
+                                <span class="P_top_6 M_start_5">
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="column_card">
+                        <div class="specialists_img">
+                            <img src="images/specialists_img3.png" class="radius12" alt="">
+                            <a href="doctor.html" class="over-layer"><i class="fa fa-link"></i></a>
+                        </div>
+                        <h6 class="fontBold mt-3 mb-3">Доктор Белал</h6>
+                        <p class="text-center text-secondary font11">
+                            Стоматолог-ортопед, стоматолог-ортодонт,
+                            хирург-имплантолог
+                        </p>
+                        <a class="default_link mainColor font13" href="doctor.html">
+                            <div class="d-flex align-items-center">
+                                <span>Learn more</span>
+                                <span class="P_top_6 M_start_5">
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="column_card">
+                        <div class="specialists_img">
+                            <img src="images/specialists_img4.png" class="radius12" alt="">
+                            <a href="doctor.html" class="over-layer"><i class="fa fa-link"></i></a>
+                        </div>
+                        <h6 class="fontBold mt-3 mb-3">Доктор Белал</h6>
+                        <p class="text-center text-secondary font11">
+                            Стоматолог-ортопед, стоматолог-ортодонт,
+                            хирург-имплантолог
+                        </p>
+                        <a class="default_link mainColor font13" href="doctor.html">
+                            <div class="d-flex align-items-center">
+                                <span>Learn more</span>
+                                <span class="P_top_6 M_start_5">
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="column_card">
+                        <div class="specialists_img">
+                            <img src="images/specialists_img5.png" class="radius12" alt="">
+                            <a href="doctor.html" class="over-layer"><i class="fa fa-link"></i></a>
+                        </div>
+                        <h6 class="fontBold mt-3 mb-3">Доктор Белал</h6>
+                        <p class="text-center text-secondary font11">
+                            Стоматолог-ортопед, стоматолог-ортодонт,
+                            хирург-имплантолог
+                        </p>
+                        <a class="default_link mainColor font13" href="doctor.html">
+                            <div class="d-flex align-items-center">
+                                <span>Learn more</span>
+                                <span class="P_top_6 M_start_5">
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="column_card">
+                        <div class="specialists_img">
+                            <img src="images/specialists_img6.png" class="radius12" alt="">
+                            <a href="doctor.html" class="over-layer"><i class="fa fa-link"></i></a>
+                        </div>
+                        <h6 class="fontBold mt-3 mb-3">Доктор Белал</h6>
+                        <p class="text-center text-secondary font11">
+                            Стоматолог-ортопед, стоматолог-ортодонт,
+                            хирург-имплантолог
+                        </p>
+                        <a class="default_link mainColor font13" href="doctor.html">
+                            <div class="d-flex align-items-center">
+                                <span>Learn more</span>
+                                <span class="P_top_6 M_start_5">
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="column_card">
+                        <div class="specialists_img">
+                            <img src="images/specialists_img7.png" class="radius12" alt="">
+                            <a href="doctor.html" class="over-layer"><i class="fa fa-link"></i></a>
+                        </div>
+                        <h6 class="fontBold mt-3 mb-3">Доктор Белал</h6>
+                        <p class="text-center text-secondary font11">
+                            Стоматолог-ортопед, стоматолог-ортодонт,
+                            хирург-имплантолог
+                        </p>
+                        <a class="default_link mainColor font13" href="doctor.html">
+                            <div class="d-flex align-items-center">
+                                <span>Learn more</span>
+                                <span class="P_top_6 M_start_5">
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end specialists -->
+
+        <!-- start blogs -->
+        <section id="Blog" class="blogs position-relative">
+            <img src="images/pattern.png" class="pattern" alt="">
+            <h5 class="text-center fontBold secondColor mb-2">Blog DR.BELAL</h5>
+            <div class="title-txt">
+                <p class="mb-2 text-secondary">
+                    Updete DR.BELAL blog
+                </p>
+            </div>
+            <div class="container">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="blog-slider" class="owl-carousel">
+                                <div class="blog-slide">
+                                    <div class="blog-img">
+                                        <img src="images/Rectangle.png" alt="">
+                                        <a href="blog.html" class="over-layer"><i class="fa fa-link"></i></a>
+                                    </div>
+                                    <div class="blog-content">
+                                        <h3 class="blog-title">
+                                            <a href="blog.html">Pros & Cons Of Ceramic Braces</a>
+                                        </h3>
+                                        <p class="blog-description">
+                                            Ceramic braces work in the same way as traditional metal braces.
+                                            They align, straighten and adjust teeth.
+                                            Ceramic braces have become increasingly popular recently due to them being
+                                            less noticeable on the teeth.
+                                            However, there are notable differences between traditional metal braces and
+                                            ceramic braces.
+                                        </p>
+                                        <a class="default_link mainColor font13" href="blog.html">
+                                            <div class="d-flex align-items-center">
+                                                <span>Learn more</span>
+                                                <span class="P_top_6 M_start_5">
+                                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="blog-slide">
+                                    <div class="blog-img">
+                                        <img src="images/blog_img2.png" alt="">
+                                        <a href="blog.html" class="over-layer"><i class="fa fa-link"></i></a>
+                                    </div>
+                                    <div class="blog-content">
+                                        <h3 class="blog-title">
+                                            <a href="blog.html">Lost a Filling? What To Do & Steps to Take</a>
+                                        </h3>
+                                        <p class="blog-description">
+                                            One of the biggest benefits of ceramic braces is that
+                                            the ceramic material used in these braces can be either
+                                            clear or tooth-colored, making them much less obvious.
+                                        </p>
+                                        <a class="default_link mainColor font13" href="blog.html">
+                                            <div class="d-flex align-items-center">
+                                                <span>Learn more</span>
+                                                <span class="P_top_6 M_start_5">
+                                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="blog-slide">
+                                    <div class="blog-img">
+                                        <img src="images/blog_img3.png" alt="">
+                                        <a href="blog.html" class="over-layer"><i class="fa fa-link"></i></a>
+                                    </div>
+                                    <div class="blog-content">
+                                        <h3 class="blog-title">
+                                            <a href="blog.html">Lost a Filling? What To Do & Steps to Take</a>
+                                        </h3>
+                                        <p class="blog-description">
+                                            One of the biggest benefits of ceramic braces is that
+                                            the ceramic material used in these braces can be either
+                                            clear or tooth-colored, making them much less obvious.
+                                        </p>
+                                        <a class="default_link mainColor font13" href="blog.html">
+                                            <div class="d-flex align-items-center">
+                                                <span>Learn more</span>
+                                                <span class="P_top_6 M_start_5">
+                                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- end blogs -->
+
+
+        <!-- start Testimonials -->
+        <section id="Testimonials" class="Testimonials position-relative">
+            <h5 class="text-center fontBold secondColor mb-2">Testimonials</h5>
+            <div class="container">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="Testimonials-slider" class="owl-carousel">
+                                <div class="Testimonials-slide">
+                                    <div class="ratings">
+                                        <span><i class="fa fa-star rating-color"></i></span>
+                                        <span><i class="fa fa-star rating-color"></i></span>
+                                        <span><i class="fa fa-star rating-color"></i></span>
+                                        <span><i class="fa fa-star rating-color"></i></span>
+                                        <span><i class="fa fa-star"></i></span>
+                                    </div>
+                                    <div class="Testimonials-content">
+                                        <h3 class="Testimonials-title mt-3 mb-3">
+                                            Services Name
+                                        </h3>
+                                        <p class="Testimonials-description">
+                                            Get working experience to work with this amazing team & in future want to
+                                            work together for bright future projects and also make deposit to
+                                            freelancer.
+                                        </p>
+                                        <div class="d-flex align-items-center flex-column">
+                                            <img src="images/doctor-img2.png" class="width40 height40 round"
+                                                alt="user_img">
+                                            <h6 class="font13 mt-3 mb-3">Denny Hilguston</h6>
+                                            <span class="font12 fontBold mainColor">@salah.co</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Testimonials-slide">
+                                    <div class="ratings">
+                                        <span><i class="fa fa-star rating-color"></i></span>
+                                        <span><i class="fa fa-star rating-color"></i></span>
+                                        <span><i class="fa fa-star rating-color"></i></span>
+                                        <span><i class="fa fa-star rating-color"></i></span>
+                                        <span><i class="fa fa-star"></i></span>
+                                    </div>
+                                    <div class="Testimonials-content">
+                                        <h3 class="Testimonials-title mt-3 mb-3">
+                                            Services Name
+                                        </h3>
+                                        <p class="Testimonials-description">
+                                            Get working experience to work with this amazing team & in future want to
+                                            work together for bright future projects and also make deposit to
+                                            freelancer.
+                                        </p>
+                                        <div class="d-flex align-items-center flex-column">
+                                            <img src="images/doctor-img2.png" class="width40 height40 round"
+                                                alt="user_img">
+                                            <h6 class="font13 mt-3 mb-3">Denny Hilguston</h6>
+                                            <span class="font12 fontBold mainColor">@salah.co</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Testimonials-slide">
+                                    <div class="ratings">
+                                        <span><i class="fa fa-star rating-color"></i></span>
+                                        <span><i class="fa fa-star rating-color"></i></span>
+                                        <span><i class="fa fa-star rating-color"></i></span>
+                                        <span><i class="fa fa-star rating-color"></i></span>
+                                        <span><i class="fa fa-star"></i></span>
+                                    </div>
+                                    <div class="Testimonials-content">
+                                        <h3 class="Testimonials-title mt-3 mb-3">
+                                            Services Name
+                                        </h3>
+                                        <p class="Testimonials-description">
+                                            Get working experience to work with this amazing team & in future want to
+                                            work together for bright future projects and also make deposit to
+                                            freelancer.
+                                        </p>
+                                        <div class="d-flex align-items-center flex-column">
+                                            <img src="images/doctor-img2.png" class="width40 height40 round"
+                                                alt="user_img">
+                                            <h6 class="font13 mt-3 mb-3">Denny Hilguston</h6>
+                                            <span class="font12 fontBold mainColor">@salah.co</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- end Testimonials -->
+
+        <!-- start app download -->
+        <section class="app_download position-relative mb-5">
+            <img src="images/shape_right.png" class="shape_right" alt="shape right">
+            <img src="images/shape_left.png" class="shape_left" alt="shape left">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-12 mb-2">
+                        <div class="d-flex flex-column">
+                            <span class="font12 fontBold mainColor">Download app</span>
+                            <p class="font35 fontBold secondColor mt-4 mb-4">
+                                Follow your bookings at the clinic and appointments through the app
+                            </p>
+                            <p class="font14 secondColor mb-0">
+                                The app helps you access notifications faster as appointments approach
+                            </p>
+                            <div class="d-flex align-items-center mt-4" style="gap: 25px;">
+                                <a href="" class="btn round_btn raise fluid up">
+                                    <div class="d-flex align-items-center">
+                                        <img src="images/apple.png" class="width30 M_end_20" alt="apple">
+                                        <div class="d-flex flex-column">
+                                            <span class="font9 mainColor">Get It From</span>
+                                            <span class="font10 fontBold mainColor">Appstore</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="btn round_btn raise fluid up">
+                                    <div class="d-flex align-items-center">
+                                        <img src="images/google-play.png" class="width30 M_end_20" alt="google-play">
+                                        <div class="d-flex flex-column">
+                                            <span class="font9 mainColor">Get It From</span>
+                                            <span class="font10 fontBold mainColor">Playstore</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 mb-2">
+                        <div class="phone_screen">
+                            <img src="images/screen.png" class="stand_screen" alt="screen">
+                            <img src="images/screen2.png" class="float_screen" alt="screen">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end app download -->
+
+        <!-- start map api -->
+        <section class="mt-5 mb-0">
+            <div id="map"></div>
+        </section>
+        <!-- end map api -->
+
+    </div>
+    <!-- end content -->
+
+    <!-- start footer -->
+    <footer class="pt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div id="Contact" class="col-lg-5 col-md-6 col-12 mb-2">
+                    <form action="">
+                        <div class="row align-items-end">
+                            <div class="col-12 mb-2">
+                                <span class="font15 fontBold text-white">Connect with us</span>
+                            </div>
+                            <div class="col-md-8 col-12">
+                                <div class="d-flex flex-column">
+                                    <div class="footerInp">
+                                        <label for="">
+                                            <input type="email" placeholder="Enter your email or mobile number">
+                                        </label>
+                                    </div>
+                                    <div class="footerInp">
+                                        <label class="" for="">
+                                            <textarea placeholder="Enter the note"></textarea>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-12">
+                                <button class="btn footer_btn up raise">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 mb-2">
+                    <div class="d-flex align-items-start">
+                        <div class="footer_links">
+                            <span class="font12 fontBold text-white">Clinic info</span>
+                            <ul class="footer_list">
+                                <li>
+                                    <div class="d-flex align-items-start">
+                                        <img class="M_end_10" src="images/location.png" alt="location">
+                                        <a href="" class="d-flex flex-column default_link">
+                                            <span class="font10 fontBold mainColor mb-2">123 Main Street</span>
+                                            <span class="font10 fontBold mainColor mb-2">Your City, State Country</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-start">
+                                        <img class="M_end_10" src="images/calling.png" alt="location">
+                                        <a href="" class="d-flex flex-column default_link">
+                                            <span class="font10 fontBold mainColor mb-2">(123) 456-7890</span>
+                                            <span class="font10 fontBold mainColor mb-2">(123) 256-7890</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="d-flex align-items-start">
+                                        <img class="M_end_10" src="images/sms.png" alt="location">
+                                        <a href="" class="d-flex flex-column default_link">
+                                            <span class="font10 fontBold mainColor mb-2">info@doctojones.me</span>
+                                            <span class="font10 fontBold mainColor mb-2">info@themeperch.net</span>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="worktime">
+                            <span class="font12 fontBold text-white">Worktime</span>
+                            <div class="d-flex flex-wrap mt-2" style="gap: 5px;">
+                                <span class="font10 mainColor">MON</span>
+                                <span class="font10 mainColor">TUE</span>
+                                <span class="font10 mainColor">WED</span>
+                                <span class="font10 mainColor">SUN</span>
+                                <span class="font10 mainColor">THU</span>
+                                <span class="font10 mainColor">SAT</span>
+                            </div>
+                            <div class="d-flex align-items-center text-white font11 mt-3" style="gap: 8px;">
+                                <span>11:00PM</span>
+                                <span>12:00Am</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 mb-2">
+                    <h6 class="font15 fontBold text-white text-center mb-4">Download app</h6>
+                    <div class="d-flex align-items-center justify-content-around">
+                        <a href="" class="btn round_btn raise fluid">
+                            <div class="d-flex align-items-center">
+                                <img src="images/apple2.png" class="width30 M_end_20" alt="apple">
+                                <div class="d-flex flex-column">
+                                    <span class="font9 text-white">Get It From</span>
+                                    <span class="font10 fontBold text-white">Appstore</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="" class="btn round_btn raise fluid">
+                            <div class="d-flex align-items-center">
+                                <img src="images/google-play2.png" class="width30 M_end_20" alt="apple">
+                                <div class="d-flex flex-column">
+                                    <span class="font9 text-white">Get It From</span>
+                                    <span class="font10 fontBold text-white">Playstore</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="copyRight">
+                    <img src="images/logo_footer.png" class="width140 M_end_15" alt="logo">
+                    <span>Copyright by 2019 <a class="default_link" href="">TRIPLE, Q</a></span>
+                </div>
+                <div class="footer_nav">
+                    <ul>
+                        <li class="active"><a class="default_link" href="">Home</a></li>
+                        <li><a class="default_link" href="#Services">Services</a></li>
+                        <li><a class="default_link" href="#About">About us</a></li>
+                        <li><a class="default_link" href="#Doctors">Doctors</a></li>
+                        <li><a class="default_link" href="#Blog">Blog Post</a></li>
+                        <li><a class="default_link" href="#Testimonials">Testimonials</a></li>
+                        <li><a class="default_link" href="#Contact">Contact us</a></li>
+                        <li><a class="default_link" href="job.html">job</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="Ckin/js/ckin.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&v=weekly" defer></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">  new WOW().init(); </script>
+    <script>
+        $(document).ready( function () {
+            $('.owl-item.active').find('video').trigger('play');
+                // $('.owl-item').find('video').trigger('pause');
+        })
+    </script>
+    <script>
+        $('#main_slider').owlCarousel({
+            rtl: true,
+            nav: false,
+            items: 1,
+            loop: false,
+            animateOut: 'slideOutUp',
+            animateIn: 'slideInUp',
+            autoplay: false,
+            smartSpeed: 1000,
+            // navText: [`<img class='width20' src="images/up-arrow.png">`, `<img class='width20' src="images/down-arrow.png">`],
+            // navContainer: '#cursol-wrapper .custom-nav',
+            dotsContainer: '#customized-dots',
+        });
+        $('#cursol-wrapper .slider-arrow.right').click(function (e) {
+            e.preventDefault();
+            // $('.owl-carousel').trigger('next.owl.carousel');
+            $('#main_slider').trigger('next.owl.carousel', [300]);
+        });
+
+        $('#cursol-wrapper .slider-arrow.left').click(function (e) {
+            e.preventDefault();
+            // $('.owl-carousel').trigger('prev.owl.carousel', [300]);
+            $('#main_slider').trigger('prev.owl.carousel', [300]);
+        });
+
+        let $owl = $('.owl-carousel');
+
+        $owl.on('initialized.owl.carousel changed.owl.carousel resized.owl.carousel', function (e) {
+            $(e.target).toggleClass('hide-owl-next', e.item.index >= e.item.count - e.page.size);
+            $(e.target).toggleClass('hide-owl-prev', e.item.index == 0);
+        });
+
+        $("#blog-slider").owlCarousel({
+            // center: true,
+            autoplay: true,
+            nav: true,
+            loop: true,
+            smartSpeed: 1000,
+            navText: ["<div class='nav-button owl-prev'><ion-icon name='arrow-back-outline'></ion-icon></div>", "<div class='nav-button owl-next'><ion-icon name='arrow-forward-outline'></ion-icon></div>"],
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 2,
+                    nav: true
+                },
+                1000: {
+                    items: 3,
+                    nav: true,
+                    loop: true
+                }
+            }
+        });
+
+        $("#Testimonials-slider").owlCarousel({
+            // center: true,
+            autoplay: true,
+            nav: true,
+            loop: true,
+            smartSpeed: 1000,
+            navText: ["<div class='nav-button owl-prev'><ion-icon name='arrow-back-outline'></ion-icon></div>", "<div class='nav-button owl-next'><ion-icon name='arrow-forward-outline'></ion-icon></div>"],
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 2,
+                    nav: true
+                },
+                1000: {
+                    items: 3,
+                    nav: true,
+                    loop: true
+                }
+            }
+        });
+
+    </script>
+    <script>
+        function initMap() {
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 16,
+                center: { lat: -33, lng: 151 },
+            });
+            const image = "images/map_marker.png";
+            const beachMarker = new google.maps.Marker({
+                position: { lat: -33, lng: 151 },
+                map,
+                icon: image,
+            });
+        }
+
+        window.initMap = initMap;
+
+    </script>
+    <script>
+        $(document).ready(function () { $(".niceSelect").niceSelect(); })
+    </script>
+</body>
+
+</html>

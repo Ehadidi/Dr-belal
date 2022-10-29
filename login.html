@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="css/main_ltr.css"> -->
+    <title>Doctor</title>
+</head>
+
+<body>
+    <div class="loader_wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <div class="auth_wrapper">
+        <img src="images/login_bg.png" class="auth_bg" alt="login bg">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 d-md-block d-none">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-12 mb-3">
+                                <img src="images/doctor-img.png" class="w-100 main_login_img" alt="">
+                            </div>
+                            <div class="col-md-6 col-12 mb-2">
+                                <img class="w-100 login_img" src="images/group1.png" alt="">
+                            </div>
+                            <div class="col-md-6 col-12 mb-2">
+                                <img class="w-100 login_img" src="images/doctor-img2.png" alt="">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6 col-md-8 col-12">
+                    <div class="d-flex flex-column align-items-center position-relative">
+                        <a class="default_link float_top_left M_top_50 mainColor font30" href="index.html">
+                            <ion-icon name="arrow-back-outline"></ion-icon>
+                        </a>
+                        <img src="images/auth_logo.png" class="width120 M_bottom_50 M_top_40" alt="">
+                        <h4 class="mainColor fontBold mt4 M_bottom_40">Login</h4>
+                        <p class="font15 fontBold secondColor">We create gorgeous smiles and provide a full range of
+                            dental services!</p>
+                    </div>
+                    <div class="row flex-column align-items-center">
+                        <div class="col-lg-6 col-md-8 col-12 mt-2 mb-2">
+                            <div class="form__label">
+                                <input class="default_input" type="text" required="" placeholder="Email">
+                                <label class="float__label" for="">Email</label>
+                                <span class="float_icon"><img src="images/email.png" class="width18" alt="email"></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-8 col-12 mt-2 mb-2">
+                            <div class="form__label">
+                                <input class="default_input" id="input_pass" type="password" required="" placeholder="password">
+                                <label class="float__label" for="">password</label>
+                                <div class="toggle_pass">
+                                    <input type="checkbox" class="float_input" onclick="showPassword()">
+                                    <span class="font17">
+                                        <ion-icon name="eye-off-outline" role="img" class="md hydrated"
+                                            aria-label="eye off outline"></ion-icon>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-8 col-12 mt-3 mb-5">
+                            <button class="btn main_btn up raise w-100">Login</button>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex justify-content-center">
+                                <a class="default_link font17" href="register.html">Sign up</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">  new WOW().init(); </script>
+    <script>
+
+        function showPassword() {
+            var inptPass = document.getElementById('input_pass')
+            console.log(inptPass)
+            if (inptPass.type === "password") {
+                inptPass.type = "text";
+            } else {
+                inptPass.type = "password";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
